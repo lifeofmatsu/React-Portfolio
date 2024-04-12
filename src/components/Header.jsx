@@ -1,5 +1,4 @@
 import React from 'react';
-import Navigation from './Nav';
 
 const Header = ({ scrollToSection, aboutMeRef, portfolioRef, contactRef, resumeRef }) => {
     return (
