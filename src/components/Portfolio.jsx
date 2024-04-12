@@ -30,6 +30,13 @@ const projects = [
 		deployedUrl: 'http://deployedurl.com',
 		repoUrl: 'http://github.com/repo'
 	},
+    {
+		title: `Zeo University Hub`,
+		description: 'Assuage your college fears with our college info site.',
+		image: 'src/assets/Vagabond-Watch-Logo.jpg',
+		deployedUrl: 'http://deployedurl.com',
+		repoUrl: 'http://github.com/repo'
+	},
 	{
 		title: `The Salaryman's Calendar`,
 		description: 'Organize your busy life efficiently.',
