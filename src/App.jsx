@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import Header from './components/Header.jsx';
 import AboutMe from './components/AboutMe.jsx';
 import Portfolio from './components/Portfolio.jsx';
