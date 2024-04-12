@@ -4,7 +4,7 @@ const AboutMe = () => {
     return (
         <section className="about-me">
             <h2>About Me</h2>
-            <img src="public/profile_pic.jpeg" alt="Jus' Profile Photo"/>
+            <img src="/profile_pic.jpeg" alt="Jus' Profile Photo"/>
             <p>
                 My name is Justin (Jus) Ferrell, they/them. I have two dreams:
                 one is to know the feeling of earning $200k/year, and the other

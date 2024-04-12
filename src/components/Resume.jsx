@@ -4,7 +4,7 @@ const Resume = () => {
 	return (
 		<section className='resume'>
 			<h2>My Resume</h2>
-			<a href='public/files/JDF Resume_04-05-24.pdf' download>
+			<a href='/files/JDF Resume_04-05-24.pdf' download>
 				Download My Resume
 			</a>
 			<h3>Skills</h3>
