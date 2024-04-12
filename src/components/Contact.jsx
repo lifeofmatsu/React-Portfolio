@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { isValidEmail } from '../utils/helpers';
 
 const Contact = () => {
 	const [formData, setFormData] = useState({
@@ -8,17 +9,11 @@ const Contact = () => {
 	});
 	const [errors, setErrors] = useState({ email: '' });
 
-	// Email validation function
-	const isValidEmail = (email) => {
-		const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-		return regex.test(email);
-	};
-
 	const handleChange = (e) => {
 		const { name, value } = e.target;
 		setFormData({ ...formData, [name]: value });
 
-		// Validate email on change
+		// validate email on change
 		if (name === 'email') {
 			if (!isValidEmail(value)) {
 				setErrors({
@@ -33,19 +28,18 @@ const Contact = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		// Ensure all fields are filled
+		// ensure all fields are filled
 		if (!formData.name || !formData.email || !formData.message) {
 			alert('Please fill out all fields.');
 			return;
 		}
 
-		// Further email validation upon submission if needed
+		// further email validation upon submission if needed
 		if (!isValidEmail(formData.email)) {
 			alert('Please enter a valid email address.');
 			return;
 		}
 
-		// Here you would handle the form submission, e.g., sending data to a server
 		console.log('Form data submitted:', formData);
 	};
 
