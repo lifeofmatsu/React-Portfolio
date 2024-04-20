@@ -1,18 +1,25 @@
 import React from 'react';
+import Nav from './Nav';
 
-const Header = ({ scrollToSection, aboutMeRef, portfolioRef, contactRef, resumeRef }) => {
+const Header = ({ scrollToSection, aboutRef, experienceRef, portfolioRef, contactRef }) => {
     return (
-        <header className='header'>
+        <header>
             <div>
-                <h1>Justin (Jus) Ferrell</h1>
-                <h3>they/them</h3>
+                <a className='name-inline' href='/'> 
+                    <h1>Jus Ferrell</h1>
+                    <h3>they/them</h3>
+                </a>
+                <h2>Computer Science Student | MERNG Stack Engineer</h2>
+                <p>I dabble in minimalist, engaging, and accessible virtual experiences.</p>
             </div>
-            <div className="header-buttons">
-                <button onClick={() => scrollToSection(aboutMeRef)}>About Me</button>
-                <button onClick={() => scrollToSection(portfolioRef)}>Portfolio</button>
-                <button onClick={() => scrollToSection(contactRef)}>Contact</button>
-                <button onClick={() => scrollToSection(resumeRef)}>Resume</button>
-            </div>
+            <Nav 
+                scrollToSection={scrollToSection}
+                aboutRef={aboutRef}
+                experienceRef={experienceRef}
+                portfolioRef={portfolioRef}
+                contactRef={contactRef}
+            />
+            
         </header>
     );
 };

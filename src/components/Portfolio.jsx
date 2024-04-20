@@ -56,8 +56,8 @@ const projects = [
 const Portfolio = () => {
 	return (
 		<>
-			<h2 className='portfolio-title'>Portfolio</h2>
-			<section className='portfolio'>
+			<h2>Projects</h2>
+			<section>
 				{projects.map((project, index) => (
 					<Project key={index} {...project} />
 				))}
